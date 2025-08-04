@@ -1,10 +1,11 @@
 import discord
 import os
 from dotenv import load_dotenv
+from discord.ext import commands
 
 intents = discord.Intents.default()
 intents.message_content = True
-client = discord.Client(intents=intents)
+client = commands.Bot(command_prefix='.', intents=intents)
 
 load_dotenv()
 
