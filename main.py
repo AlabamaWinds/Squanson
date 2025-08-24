@@ -20,7 +20,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     
-    if message.content.lower() == 'test':
+    if message.content.lower() == 'cream':
         await message.channel.send(f'Hello {message.author.display_name}!')
         
 client.run(token=token)
